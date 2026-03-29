@@ -1,0 +1,8 @@
+{
+	"name": "han_river_map",
+	"version": "1.0.0",
+	"label": "Han River Map (한강)",
+	"description": "A random map where a wide river divides the map east-to-west. Players are split between north and south banks with shallow fords as contested crossing points.",
+	"url": "https://github.com/bemoregt/HanRiverMap_for_0ADGame",
+	"dependencies": ["0ad=0.0.26"]
+}

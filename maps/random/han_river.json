@@ -1,0 +1,12 @@
+{
+	"settings": {
+		"Name": "Han River (한강)",
+		"Script": "han_river.js",
+		"Description": "A wide river divides the map east-to-west. Players are split between the north and south banks. Shallow fords offer contested crossing points.",
+		"Preview": "han_river.png",
+		"Keywords": ["multiplayer"],
+		"SupportedBiomes": "generic/",
+		"CircularMap": false,
+		"Dependencies": ["0ad=0.0.26"]
+	}
+}
