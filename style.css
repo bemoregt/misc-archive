@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+#scene {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  font: 12px/1.4 -apple-system, "Malgun Gothic", sans-serif;
+  color: #e8ecf2;
+  background: rgba(10, 12, 18, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  padding: 8px 10px;
+  min-width: 190px;
+}
+
+#controlsToggle {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #cfd6e2;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 4px;
+}
+
+#controlsBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+#controls.collapsed #controlsBody {
+  display: none;
+}
+
+#controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#controls input[type="range"] {
+  width: 100%;
+  accent-color: #7fb3ff;
+}
+
+#controls input[type="color"] {
+  width: 100%;
+  height: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: transparent;
+  padding: 0;
+}
+
+#controls label.checkbox-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+#controls input[type="checkbox"] {
+  accent-color: #7fb3ff;
+  width: 14px;
+  height: 14px;
+}
+
+#controls b {
+  color: #9fd0ff;
+  font-weight: 600;
+}
+
+#liveStats {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 6px;
+  color: #a9b2c2;
+}

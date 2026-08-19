@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rain Drop Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+
+<div id="controls">
+  <button id="controlsToggle" type="button" aria-label="패널 접기/펼치기">▾</button>
+  <div id="controlsBody">
+    <label>
+      <span>빗방울 수 <b id="rateVal"></b>/초</span>
+      <input id="rate" type="range" min="0" max="30" step="0.5" value="8">
+    </label>
+    <label>
+      <span>동심원 밀도(지속시간) <b id="lifeVal"></b>초</span>
+      <input id="life" type="range" min="1" max="10" step="0.5" value="4.2">
+    </label>
+    <label>
+      <span>애니메이션 속도 <b id="speedVal"></b>x</span>
+      <input id="speed" type="range" min="0.1" max="3" step="0.1" value="1">
+    </label>
+    <label>
+      <span>배경색</span>
+      <input id="bgColor" type="color" value="#020204">
+    </label>
+    <label>
+      <span>블러(사실감) <b id="blurVal"></b>px</span>
+      <input id="blur" type="range" min="0" max="4" step="0.2" value="1.2">
+    </label>
+    <label class="checkbox-row">
+      <input id="fullView" type="checkbox">
+      <span>전체뷰 (화면 전체에 고르게)</span>
+    </label>
+    <div id="liveStats">활성 파문: <b id="rippleCount">0</b> · 파티클: <b id="particleCount">0</b></div>
+  </div>
+</div>
+
+<script src="rain-simulation.js"></script>
+</body>
+</html>
